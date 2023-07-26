@@ -13,7 +13,7 @@ public class GetExamsUi {
     private final ExamRepository examRepository;
 
     public GetExamsUi() {
-        examRepository = new ExamRepositoryImpl();
+        examRepository = ExamRepositoryImpl.getInstance();
     }
 
     public void showExams() {

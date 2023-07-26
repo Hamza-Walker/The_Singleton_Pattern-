@@ -15,7 +15,7 @@ public class AddExamUi {
     private final ExamRepository examRepository;
 
     public AddExamUi() {
-        examRepository = new ExamRepositoryImpl();
+        examRepository = ExamRepositoryImpl.getInstance();
     }
 
     public void addExam() {
